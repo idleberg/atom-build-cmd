@@ -21,22 +21,14 @@ Install `build-cmd` from Atom's [Package Manager](http://flight-manual.atom.io/u
 Change to your Atom packages directory:
 
 ```bash
-# Windows
 $ cd %USERPROFILE%\.atom\packages
-
-<<<<<<< HEAD
-`$ git clone https://github.com/idleberg/atom-build-cmd build-cmd`
-=======
-# Mac OS X & Linux
-$ cd ~/.atom/packages/
 ```
 
-Clone repository as `build-powershell`:
+Clone repository as `build-cmd`:
 
 ```bash
-$ git clone https://github.com/idleberg/atom-build-powershell build-powershell
+$ git clone https://github.com/idleberg/atom-build-cmd build-cmd
 ```
->>>>>>> parent of 93e52cf... rename OS X to macOS
 
 ## Usage
 
@@ -71,6 +63,3 @@ This work is licensed under the [The MIT License](LICENSE.md).
 ## Donate
 
 You are welcome support this project using [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/atom-build-cmd) or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
-
-[osascript]: https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/osascript.1.html
-[osacompile]: https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/osacompile.1.html
