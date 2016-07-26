@@ -4,7 +4,7 @@
 [![apm](https://img.shields.io/apm/v/build-cmd.svg?style=flat-square)](https://atom.io/packages/build-cmd)
 [![apm](https://img.shields.io/apm/dm/build-cmd.svg?style=flat-square)](https://atom.io/packages/build-cmd)
 [![Travis](https://img.shields.io/travis/idleberg/atom-build-cmd.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-build-cmd)
-[![David](https://img.shields.io/david/idleberg/atom-build-cmd.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-cmd#info=devDependencies)
+[![David](https://img.shields.io/david/idleberg/atom-build-cmd.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-cmd#info=dependencies)
 [![David](https://img.shields.io/david/dev/idleberg/atom-build-cmd.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-cmd#info=devDependencies)
 
 [Atom Build](https://atombuild.github.io/) provider for the Windows Command Prompt, runs Batch scripts.
