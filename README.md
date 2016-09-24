@@ -34,8 +34,8 @@ $ git clone https://github.com/idleberg/atom-build-cmd build-cmd
 Install Node dependencies:
 
 ```bash
-cd build-cmd
-npm install
+$ cd build-cmd
+$ npm install
 ```
 
 ## Usage
