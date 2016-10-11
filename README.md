@@ -35,7 +35,7 @@ Install Node dependencies:
 
 ```bash
 $ cd build-cmd
-$ npm install
+$ yarn || npm install
 ```
 
 ## Usage
