@@ -31,10 +31,9 @@ Clone repository as `build-cmd`:
 $ git clone https://github.com/idleberg/atom-build-cmd build-cmd
 ```
 
-Install Node dependencies:
+Inside the cloned directory, install Node dependencies:
 
 ```bash
-$ cd build-cmd
 $ yarn || npm install
 ```
 
