@@ -1,6 +1,6 @@
 {
   "name": "build-cmd",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Atom Build provider for the Windows Command Prompt, runs Batch scripts",
   "repository": {
     "type": "git",
