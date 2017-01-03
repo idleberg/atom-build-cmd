@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "keywords": [
+    "buildprovider",
     "batch",
     "windows",
     "cmd",
@@ -26,7 +27,7 @@
     }
   },
   "package-deps": [
-    "build-provider"
+    "build"
   ],
   "dependencies": {
     "atom-package-deps": "^4.3.1"
