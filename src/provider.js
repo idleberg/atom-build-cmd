@@ -1,8 +1,9 @@
-import meta from '../package.json';
 import { configSchema, getConfig } from './config';
 import { EventEmitter } from 'events';
 import { platform } from 'os';
 import { satisfyDependencies } from 'atom-satisfy-dependencies';
+import Logger from './log';
+import meta from '../package.json';
 
 export { configSchema as config };
 
@@ -20,6 +21,7 @@ export function provideBuilder() {
 
     isEligible() {
       if (getConfig('alwaysEligible') === true) {
+        Logger.log('Always eligible');
         return true;
       }
 
@@ -62,9 +64,15 @@ export function provideBuilder() {
   };
 }
 
-// This package depends on build, make sure it's installed
 export function activate() {
+  Logger.log('Activating package');
+
+  // This package depends on build, make sure it's installed
   if (getConfig('manageDependencies') === true) {
     satisfyDependencies(meta.name);
   }
+}
+
+export function deactivate() {
+  Logger.log('Deactivating package');
 }
