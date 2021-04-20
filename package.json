@@ -1,6 +1,6 @@
 {
   "name": "build-cmd",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Atom Build provider for the Windows Command Prompt, runs Batch scripts",
   "repository": "https://github.com/idleberg/atom-build-cmd",
   "license": "MIT",
