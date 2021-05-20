@@ -4,7 +4,7 @@
 [![apm](https://img.shields.io/apm/v/build-cmd.svg?style=flat-square)](https://atom.io/packages/build-cmd)
 [![apm](https://img.shields.io/apm/dm/build-cmd.svg?style=flat-square)](https://atom.io/packages/build-cmd)
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-build-cmd)](https://circleci.com/gh/idleberg/atom-build-cmd)
-[![David](https://img.shields.io/david/idleberg/atom-build-cmd.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-cmd)
+[![David](https://img.shields.io/david/dev/idleberg/atom-build-cmd.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-cmd?type=dev)
 
 [Atom Build](https://atombuild.github.io/) provider for the Windows Command Prompt, runs Batch scripts.
 
