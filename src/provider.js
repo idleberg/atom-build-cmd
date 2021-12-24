@@ -39,6 +39,7 @@ export function provideBuilder() {
       const defaultArguments = [
         '/q',
         '/c',
+        '/u',
         '{FILE_ACTIVE}'
       ];
 
