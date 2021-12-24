@@ -1,9 +1,10 @@
 import { configSchema, getConfig } from './config';
 import { EventEmitter } from 'events';
+import { name } from '../package.json';
 import { platform } from 'os';
 import { satisfyDependencies } from 'atom-satisfy-dependencies';
 import Logger from './log';
-import { name } from '../package.json';
+import which from 'which';
 
 export { configSchema as config };
 
@@ -27,35 +28,56 @@ export function provideBuilder() {
 
       return platform() === 'win32'
         ? true
-        : false;
+        : Boolean(which.sync('wine', {
+          nothrow: true
+        }));
     }
 
     settings() {
       const cwdPath = '{FILE_ACTIVE_PATH}';
 
-      const args = [
+      const defaultArguments = [
         '/q',
         '/c',
         '{FILE_ACTIVE}'
       ];
 
-      // User settings
+      // User arguments
       const customArguments = getConfig('customArguments').trim().split(' ');
+
+      const isWindows = platform() === 'win32';
+
+      const exec = isWindows
+        ? 'cmd.exe'
+        : 'wine';
+
+      const env = isWindows
+        ? undefined
+        : {
+          'WINEDEBUG': '-all'
+        };
+
+      if (!isWindows) {
+        defaultArguments.unshift('cmd');
+        customArguments.unshift('cmd');
+      }
 
       return [
         {
           name: 'Batch',
-          exec: 'cmd',
-          args: args,
+          exec: exec,
+          args: defaultArguments,
           cwd: cwdPath,
+          env: env,
           sh: false,
           atomCommandName: 'batch:run-script'
         },
         {
           name: 'Batch (user)',
-          exec: 'cmd',
+          exec: exec,
           args: customArguments,
           cwd: cwdPath,
+          env: env,
           sh: false,
           atomCommandName: 'batch:run-script-with-user-settings'
         }
