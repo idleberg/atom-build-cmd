@@ -5,7 +5,7 @@ export const configSchema = {
     title: 'Custom Arguments',
     description: 'Specify your preferred arguments for `cmd`, supports [replacement](https://github.com/noseglid/atom-build#replacement) placeholders',
     type: 'string',
-    'default': '/q /c {FILE_ACTIVE}',
+    'default': '/q /c /u {FILE_ACTIVE}',
     order: 0
   },
   manageDependencies: {
